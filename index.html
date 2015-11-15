@@ -4,12 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>Client App Demo</title>
+    <!-- include styles -->
+    <link rel="stylesheet" href="vendor/twitter-bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<a href="app/views/partials/header.html">header</a>
-<a href="app/views/page1.html">page 1</a>
-<a href="app/views/page2.html">page 2</a>
-<a href="app/views/page3.html">page 3</a>
-<a href="app/views/partials/footer.html">footer</a>
+<!-- initialize angular app named 'app' -->
+<body ng-app="app">
 
+<!-- include header -->
+<div ng-include="'app/views/partials/header.html'" class="header"></div>
+
+<!-- div that gets controlled by routes.js -->
+<div ng-view=""></div>
+
+<!-- include footer -->
+<div ng-include="'app/views/partials/footer.html'" class="footer"></div>
+
+<!-- include vendor scripts -->
+<script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="vendor/angular/angular.js"></script>
+<script type="text/javascript" src="vendor/twitter-bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/angular-route/angular-route.js"></script>
+
+<!-- include app scripts -->
+<script type="text/javascript" src="app/routes.js"></script>
+
+</body>
 </html>
