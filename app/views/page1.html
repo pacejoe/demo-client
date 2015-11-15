@@ -1,7 +1,24 @@
 <div class="jumbotron">
     <div class="container">
-        <h1>Page 1</h1>
+        <h1> {{ page }} </h1>
 
-        <p>Welcome to the first page of our application</p>
+        <p> {{ message }} </p>
+
+        <a href="" ng-click="enableEditing()">Edit</a>
+    </div>
+</div>
+
+<div ng-show="editable" class="container">
+    <div class="row">
+        <div class="input-group col-md-4">
+            <span class="input-group-addon">Page</span>
+            <input type="text" class="form-control" ng-model="page">
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group col-md-4">
+            <span class="input-group-addon">Message</span>
+            <input type="text" class="form-control" ng-model="message">
+        </div>
     </div>
 </div>
