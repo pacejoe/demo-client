@@ -29,6 +29,14 @@
 
 * app/routes.js  
 
+# Controllers
+> Attached to a view (or DOM element) to set it's initial state and control its behavior
+
+* app/controllers/home.controller.js
+* app/controllers/page1.controller.js
+* app/controllers/page2.controller.js
+* app/controllers/page3.controller.js
+
 # Environment
 > Manages local application server and deploys code changes
 
