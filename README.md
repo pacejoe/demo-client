@@ -18,7 +18,7 @@
 * app/views/page2.html  
 * app/views/page3.html  
 
-#Syles 
+#Styles 
 > The css styles for the application
 
 * styes/style.css
