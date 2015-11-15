@@ -1,7 +1,7 @@
 # Demo Client App
 
 # Index
-> Initializes application and includes js dependecies
+> Initializes application and includes js dependencies
 
 * index.html
 
@@ -36,6 +36,12 @@
 * app/controllers/page1.controller.js
 * app/controllers/page2.controller.js
 * app/controllers/page3.controller.js
+
+
+#Filters
+> Filters are used to process data right before it is added to the view
+
+* app/filters/ri_only.filter.js
 
 # Environment
 > Manages local application server and deploys code changes

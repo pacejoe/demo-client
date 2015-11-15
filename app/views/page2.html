@@ -3,5 +3,17 @@
         <h1>Page 2</h1>
 
         <p>Welcome to the second of our application</p>
+
+        {{ developers}}
+
+        <hr />
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                Developed By <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li ng-repeat="dev in developers | riOnly"><a>{{ dev.name }}</a></li>
+            </ul>
+        </div>
     </div>
 </div>
