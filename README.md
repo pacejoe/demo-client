@@ -1,6 +1,7 @@
 # Demo Client App
 
-# Views
+# Views  
+index.html  
 /app/views/partials/header.html
 /app/views/partials/footer.html
 /app/views/home.html
