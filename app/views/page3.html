@@ -1,6 +1,11 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
+            <div class="row" ng-repeat="u in users">
+                <nameplate user="u"></nameplate>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-3">
                 <!-- user form -->
                 <form novalidate="true">
@@ -26,5 +31,7 @@
                 <input ng-click="loadData();" value="Load Data" class="btn btn-primary"/>
             </div>
         </div>
+
+
     </div>
 </div>
