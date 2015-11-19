@@ -20,7 +20,7 @@ angular.module('app')
                 url: url,
                 data: user
             });
-            return (request.then(handleError, handleError));
+            return (request.then(handleSuccess, handleError));
         };
 
 
