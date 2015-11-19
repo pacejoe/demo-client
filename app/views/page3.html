@@ -1,7 +1,30 @@
 <div class="jumbotron">
     <div class="container">
-        <h1>Page 3</h1>
-
-        <p>Welcome to the third page of our application</p>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- user form -->
+                <form novalidate="true">
+                    <div class="form-group">
+                        <input type="text" ng-model="user.firstName" placeholder="First Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" ng-model="user.lastName" placeholder="Last Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="userName" ng-model="user.userName" placeholder="User Name" class="form-control">
+                    </div>
+                    <!-- add button -->
+                    <input ng-click="addUser(user);" value="Add" class="btn pull-right btn-sm btn-success"/>
+                </form>
+                <!-- end user form -->
+            </div>
+            <div class="col-md-3">
+                <pre> {{ user | json}} </pre>
+            </div>
+            <div class="col-md-3">
+                <pre> {{ users | json}} </pre>
+                <input ng-click="loadData();" value="Load Data" class="btn btn-primary"/>
+            </div>
+        </div>
     </div>
 </div>
