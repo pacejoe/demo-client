@@ -8,17 +8,17 @@
 # Views  (app/views)   
 > The partial views within the application
 
-## Header and Footer
+# Header and Footer
 * app/views/partials/header.html  
 * app/views/partials/footer.html  
 
-## Other views
+# Other views
 * app/views/home.html  
 * app/views/page1.html  
 * app/views/page2.html  
 * app/views/page3.html  
 
-#Styles 
+# Styles 
 > The css styles for the application
 
 * styes/style.css
@@ -38,10 +38,15 @@
 * app/controllers/page3.controller.js
 
 
-#Filters
+# Filters
 > Filters are used to process data right before it is added to the view
 
 * app/filters/ri_only.filter.js
+
+# Services
+> Services are used to share code across your app (for example: interaction with a web service)
+
+* app/services/user.service.js
 
 # Environment
 > Manages local application server and deploys code changes
@@ -56,3 +61,5 @@
 2. grunt serve
 3. visit localhost:9000 in browser
 
+# Sample rest service
+> refer to README in rest folder for documentation
