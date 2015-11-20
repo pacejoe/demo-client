@@ -9,7 +9,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     port: 9000,
-                    hostname: "0.0.0.0",
+                    hostname: "localhost",
                     middleware: function (connect, options) {
                         return [
                             require('grunt-contrib-livereload/lib/utils').livereloadSnippet,
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
                 },
                 proxies: [{
                     context: '/service',
-                    host: '0.0.0.0',
+                    host: 'localhosts',
                     port: 8080 ,
                     rewrite: {
                         '^/service': '/'
