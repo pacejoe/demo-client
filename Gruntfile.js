@@ -20,7 +20,7 @@ module.exports = function (grunt) {
                 },
                 proxies: [{
                     context: '/service',
-                    host: 'localhosts',
+                    host: 'localhost',
                     port: 8080 ,
                     rewrite: {
                         '^/service': '/'
